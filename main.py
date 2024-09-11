@@ -4,8 +4,12 @@ from tkinter import ttk
 import requests
 from tkinter import messagebox as mb
 import pyperclip
+import json
+import os
 
+history_file="upload_history.json" #Это файл с историей загрузок
 
+def save_history(file_path, link):
 def upload():
     try:
         filepath=fd.askopenfilename()
